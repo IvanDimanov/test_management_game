@@ -1,0 +1,51 @@
+{
+  "name"       : "test_management_game",
+  "version"    : "1.0.0",
+  "description": "Component based Browser Game for intuitive managers",
+  "readme"     : "README.md",
+  "author"     : "Ivan Dimanov <test_management_game@idimanov.com>",
+  "license"    : "MIT",
+  "scripts": {
+    "start": "npm run build && http-server ./public -o",
+    "test" : "npm run lint && cross-env JASMINE_CONFIG_PATH=./jasmine.json NODE_ENV=test jasmine",
+    "lint" : "standard",
+
+    "build"          : "webpack --optimize-minimize",
+    "initial-build"  : "npm i && npm run build",
+    "continues-build": "webpack --watch",
+    "develop"        : "webpack-dev-server --content-base=./public"
+  },
+  "engines": {
+    "node" : ">=4.0"
+  },
+  "standard": {
+    "ignore": [
+      ".git/",
+      "node_modules/",
+      "data/",
+      "notes/",
+      "components/shared/utils.js",
+      "public/assets/vendor",
+      "public/assets"
+    ]
+  },
+  "dependencies": {
+    "cross-env"    : "1.0.7",
+    "eventemitter3": "1.1.1",
+    "http-server"  : "0.8.5"
+  },
+  "devDependencies": {
+    "babel-core"                 : "6.5.1",
+    "babel-loader"               : "6.2.2",
+    "babel-preset-es2015"        : "6.5.0",
+    "css-loader"                 : "0.23.1",
+    "extract-text-webpack-plugin": "1.0.1",
+    "node-sass"                  : "3.4.2",
+    "sass-loader"                : "3.1.2",
+    "standard"                   : "6.0.4",
+    "style-loader"               : "0.13.0",
+    "uglify-loader"              : "1.3.0",
+    "webpack"                    : "1.12.13",
+    "webpack-dev-server"         : "1.14.1"
+  }
+}
