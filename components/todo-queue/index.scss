@@ -1,0 +1,17 @@
+#todoQueue {
+  border        : 2px solid #F00;
+  display       : inline-block;
+  margin        : 10px 30px;
+  padding       : 5px 10px;
+  width         : 300px;
+  vertical-align: top;
+
+  & .issue {
+    cursor: pointer;
+
+    &:hover {
+      background-color: #C0C0C0;
+      color           : #000;
+    }
+  }
+}

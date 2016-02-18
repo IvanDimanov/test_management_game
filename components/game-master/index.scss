@@ -1,0 +1,12 @@
+#gameManagerDisapproval {
+  border : 2px solid #000;
+  display: inline-block;
+  width  : 600px;
+  margin : 60px 30px;
+
+  & .bar {
+    background-color: #B00;
+    height          : 20px;
+    width           : 0;
+  }
+}

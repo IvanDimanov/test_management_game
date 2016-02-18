@@ -1,0 +1,47 @@
+.issue {
+  border       : 1px solid #000;
+  color        : #FFF;
+  font-family  : Arial;
+  font-size    : 12px;
+  line-height  : 20px;
+  margin-bottom: 2px;
+  padding      : 5px 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.issue-complexity-10 {
+    background-color: #CB0000;
+  }
+  &.issue-complexity-9 {
+    background-color: #B70014;
+  }
+  &.issue-complexity-8 {
+    background-color: #A10029;
+  }
+
+  &.issue-complexity-7 {
+    background-color: #8E003D;
+  }
+  &.issue-complexity-6 {
+    background-color: #7A0051;
+  }
+  &.issue-complexity-5 {
+    background-color: #650066;
+  }
+
+  &.issue-complexity-4 {
+    background-color: #51007A;
+  }
+  &.issue-complexity-3 {
+    background-color: #3C008E;
+  }
+  &.issue-complexity-2 {
+    background-color: #2800A3;
+  }
+
+  &.issue-complexity-1 {
+    background-color: #1400B7;
+  }
+}
