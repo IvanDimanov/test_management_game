@@ -12,7 +12,9 @@
     "build": "webpack --optimize-minimize",
     "initial-build": "npm install && npm run build",
     "continues-build": "webpack --watch",
-    "develop": "webpack-dev-server --content-base=./public"
+    "develop": "webpack-dev-server --content-base=./public",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": ">=4.0"
@@ -31,7 +33,8 @@
   "dependencies": {
     "cross-env": "1.0.7",
     "eventemitter3": "1.1.1",
-    "http-server": "0.10.0"
+    "http-server": "0.10.0",
+    "snyk": "^1.316.2"
   },
   "devDependencies": {
     "babel-core": "6.5.1",
@@ -47,5 +50,6 @@
     "uglify-loader": "1.3.0",
     "webpack": "1.12.13",
     "webpack-dev-server": "1.14.1"
-  }
+  },
+  "snyk": true
 }
