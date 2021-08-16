@@ -31,7 +31,7 @@
   "dependencies": {
     "cross-env": "1.0.7",
     "eventemitter3": "1.1.1",
-    "http-server": "0.10.0"
+    "http-server": "0.13.0"
   },
   "devDependencies": {
     "babel-core": "6.5.1",
